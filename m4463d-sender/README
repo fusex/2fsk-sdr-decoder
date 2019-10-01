@@ -1,0 +1,23 @@
+Pinout 
+######
+Si4463 	Arduino Uno Description
+VCC 	3.3V 			
+GPIO0 	– 		–
+GPIO1 	– 		–
+SDO 	12 	    SPI MISO
+SDI 	11 	    SPI MOSI
+SCLK 	13 	    SPI SCK
+NSEL 	10 	    SPI SS
+NIRQ 	2 	    Interrupt
+SDN 	5 	    Shutdown/reset – High = Shutdown, Low = ON 
+GND 	GND 	    Ground
+
+inspired from https://blog.zakkemble.net/si4463-radio-library-avr-arduino/
+
+Default configuration:
+######################
+TX 2FSK on 434Mhz
+
+Status
+######
+Working on e10-m4463d-sma bought fron https://www.tindie.com/products/exlene/si4463-wireless-module-with-sma-antenna/
