@@ -30,9 +30,13 @@ RH_RF24 rf24;
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(5, OUTPUT);
   DEBUGSerial.begin(115200);
   while (!DEBUGSerial) ; // Wait for serial port to be available
   DEBUGSerial.println("Serial Test1.");
+
+  delay(500);                       // wait for a second
+  digitalWrite(5, LOW);
 
   if (!rf24.init()) {
     DEBUGSerial.println("RADIO init failed");
